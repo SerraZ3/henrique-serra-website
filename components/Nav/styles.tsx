@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Div = styled.div`
   display: flex;
@@ -16,6 +17,9 @@ export const LinkDiv = styled.div`
 `;
 
 export const NavDiv = styled.div`
+  position: sticky;
+  top: 0;
+  background-color: #1d1d1d;
   @media (min-width: 630px) {
     display: flex;
     justify-content: space-around;
@@ -39,10 +43,9 @@ export const Logo = styled.p`
   &:hover {
     cursor: pointer;
   }
-
 `;
 
-export const NavLink = styled.p`
+export const NavLink = styled.a`
   color: #fff;
   font-family: "Rubik";
   font-style: normal;
@@ -54,15 +57,3 @@ export const NavLink = styled.p`
     color: #11ff8d;
   }
 `;
-
-// export const Icon = styled(FaBars)`
-//   color: #fff;
-//   font-size: 45px;
-//   padding: 5px;
-//   cursor: pointer;
-//   align-self: center;
-//   /* margin-left: 30px; */
-//   @media (min-width: 600px) {
-//     display: none;
-//   }
-// `;

@@ -1,12 +1,13 @@
 import React from 'react';
+import { BannerDiv } from './styles';
 
 // import { Container } from './styles';
 
 const Banner: React.FC = () => {
   return (
-    <div>
-      <h1>Banner</h1>
-    </div>
+    <BannerDiv>
+       <h1>Banner</h1>
+    </BannerDiv>
   );
 }
 export default Banner;
