@@ -39,6 +39,7 @@ export const Logo = styled.p`
     font-size: 26px;
     line-height: 34px;
     color: #11ff8d;
+    min-width: 160px;
   }
   &:hover {
     cursor: pointer;
