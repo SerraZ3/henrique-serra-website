@@ -17,7 +17,8 @@ export const LinkDiv = styled.div`
 `;
 
 export const NavDiv = styled.div`
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: #1d1d1d;
   @media (min-width: 630px) {
@@ -33,7 +34,7 @@ export const Logo = styled.p`
   display: none;
   @media (min-width: 630px) {
     display: block;
-    font-family: "Roboto Mono";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -48,7 +49,7 @@ export const Logo = styled.p`
 
 export const NavLink = styled.a`
   color: #fff;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;

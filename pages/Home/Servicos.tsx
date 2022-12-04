@@ -3,6 +3,7 @@ import React from "react";
 import Computer from "../../assets/img/Computer.svg";
 import Bot from "../../assets/img/Bot.svg";
 import Mobile from "../../assets/img/Mobile.svg";
+import Image from "next/image";
 
 //css
 import {
@@ -20,6 +21,11 @@ const Servicos: React.FC = () => {
       <ServicosDiv>
         <BoxDiv>
           {/* Como importar imagens Next */}
+          {/* <Image src="/assets/img/Computer.svg" height="200px" width="200px" /> */}
+          <img
+            src="/assets/img/Computer.svg"
+            style={{ margin: "-90px 0 0 0" }}
+          />
 
           <BoxTitle>Website</BoxTitle>
           <BoxDescription>Mostre o seu negócio! </BoxDescription>
@@ -30,6 +36,10 @@ const Servicos: React.FC = () => {
         </BoxDiv>
 
         <BoxDiv>
+          <img
+            src="/assets/img/Mobile.svg"
+            style={{ margin: "-115px 0 0 0" }}
+          />
           <BoxTitle>Aplicativo</BoxTitle>
           <BoxDescription>Tudo na palma das mãos!</BoxDescription>
           <BoxParagraph>
@@ -39,6 +49,7 @@ const Servicos: React.FC = () => {
         </BoxDiv>
 
         <BoxDiv>
+          <img src="/assets/img/Bot.svg" style={{ margin: "-90px 0 0 0" }} />
           <BoxTitle>ChatBot</BoxTitle>
           <BoxDescription>Automatize seus atendimentos!</BoxDescription>
           <BoxParagraph>

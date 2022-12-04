@@ -7,7 +7,8 @@ export const Div = styled.div`
 `;
 
 export const NavDiv = styled.div`
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   display: flex;
   justify-content: space-around;
@@ -21,7 +22,7 @@ export const NavDiv = styled.div`
 `;
 
 export const Logo = styled.p`
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -72,7 +73,7 @@ export const ScreenNav = styled.div`
 
 export const NavLink = styled.p`
   color: #fff;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;

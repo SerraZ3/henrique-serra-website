@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Div, NavDiv, Logo, NavLink, LinkDiv} from "./styles";
+import { Div, NavDiv, Logo, NavLink, LinkDiv } from "./styles";
 
 const Nav: React.FC = () => {
-  
   return (
     <NavDiv>
       <Div>

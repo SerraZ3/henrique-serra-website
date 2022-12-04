@@ -1,19 +1,24 @@
 import React from "react";
-import { AnalyticsDiv, ADiv, AParagraph, ASpan } from "./styles";
 
-// import { Container } from './styles';
+//css
+import { AnalyticsDiv, ADiv, AParagraph, ASpan, AFlexDiv } from "./styles";
 
 const Analytics: React.FC = () => {
   return (
     <AnalyticsDiv>
       <ADiv>
-        {/* <img src="" alt="" /> */}
-        <AParagraph>
-          Seja encontrado no Google através de técnicas de <ASpan>SEO</ASpan>
-        </AParagraph>
-        <AParagraph>
-          Tome as melhores decisões a partir do Google Analytics
-        </AParagraph>
+        <AFlexDiv>
+          <img src="/assets/img/Magnifyingglass.svg" />
+          <AParagraph>
+            Seja encontrado no Google através de técnicas de <ASpan>SEO</ASpan>
+          </AParagraph>
+        </AFlexDiv>
+        <AFlexDiv>
+          <AParagraph>
+            Tome as melhores decisões a partir do Google Analytics
+          </AParagraph>
+          <img src="/assets/img/Server.svg" />
+        </AFlexDiv>
       </ADiv>
     </AnalyticsDiv>
   );

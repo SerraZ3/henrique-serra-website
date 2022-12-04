@@ -12,7 +12,7 @@ export const Div = styled.div`
 
 export const BannerDiv = styled.div`
   color: #fff;
-  height: 650px;
+  padding: 150px 0;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -34,7 +34,7 @@ export const PhraseDiv = styled.div`
   }
 `;
 export const Phrase = styled.h3`
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -110,7 +110,7 @@ export const GreenCard = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
@@ -134,34 +134,34 @@ export const WhiteCard = styled.div`
 `;
 
 export const ServicosDiv = styled.div`
-  padding: 100px 0;
+  padding: 150px 0;
   background-color: #1d1d1d;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 80px 20px;
+  gap: 115px 20px;
   /* @media (min-width: 730px) {
     flex-wrap: nowrap;
   } */
 `;
 
 export const BoxDiv = styled.div`
-  max-width: 305px;
-  width: 300px;
-  height: 332.06px;
+  max-width: 80vw;
+  width: 305px;
+  height: auto;
   background: #2d2c2c;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 30px;
+  padding: 25px 30px;
   text-align: center;
 `;
 
 export const BoxTitle = styled.h3`
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
@@ -170,7 +170,7 @@ export const BoxTitle = styled.h3`
 `;
 
 export const BoxDescription = styled.p`
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -179,7 +179,7 @@ export const BoxDescription = styled.p`
 `;
 
 export const BoxParagraph = styled.p`
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -188,7 +188,7 @@ export const BoxParagraph = styled.p`
 `;
 
 export const KMParagraph = styled.p`
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
@@ -207,15 +207,32 @@ export const AnalyticsDiv = styled.div`
 
 export const ADiv = styled.div`
   max-width: 948px;
+  gap: 15px 0;
+  /* isso não funcionou */
+`;
+export const AFlexDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 630px) {
+    flex-wrap: nowrap;
+  }
 `;
 
 export const AParagraph = styled.p`
-  font-family: "Roboto";
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
   line-height: 52px;
   color: #ffffff;
+  margin: auto;
+  max-width: 80vw;
+  text-align: center;
+  @media (min-width: 630px) {
+    text-align: left;
+  }
 `;
 
 export const ASpan = styled.span`
@@ -229,6 +246,8 @@ export const FormDiv = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px 0;
 `;
 
 export const ContactDiv = styled.div`
@@ -241,9 +260,12 @@ export const EmailDiv = styled.div`
   align-items: center;
   justify-content: center;
   gap: 35px 0;
+  /* border-left: 1px solid #11ff8d; */
+  /* max-width: 80vw; */
 `;
 
 export const Input = styled.input`
+  max-width: 90vw;
   width: 516px;
   height: 68px;
   background: rgba(231, 231, 231, 0.06);
@@ -252,9 +274,15 @@ export const Input = styled.input`
   padding: 20px;
   outline: none;
   color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 `;
 
 export const Message = styled.textarea`
+  max-width: 90vw;
   width: 516px;
   height: 206px;
   background: rgba(231, 231, 231, 0.06);
@@ -263,4 +291,29 @@ export const Message = styled.textarea`
   outline: none;
   padding: 20px;
   color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+`;
+
+export const WhatsDiv = styled.div`
+  display: flex;
+`;
+
+export const ContactsParagraph = styled.p`
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+`;
+
+export const GitDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
