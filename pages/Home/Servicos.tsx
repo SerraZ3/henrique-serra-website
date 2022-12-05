@@ -20,7 +20,6 @@ const Servicos: React.FC = () => {
     <>
       <ServicosDiv>
         <BoxDiv>
-          {/* Como importar imagens Next */}
           {/* <Image src="/assets/img/Computer.svg" height="200px" width="200px" /> */}
           <img
             src="/assets/img/Computer.svg"
@@ -45,6 +44,44 @@ const Servicos: React.FC = () => {
           <BoxParagraph>
             Realize atividades rotineiras em seu celular de forma rápida e fácil
             com um app híbrido (Android e IOS)
+          </BoxParagraph>
+        </BoxDiv>
+
+        <BoxDiv>
+          <img
+            src="/assets/img/WordpressIcon.svg"
+            style={{ margin: "-90px 0 0 0" }}
+          />
+          <BoxTitle>Wordpress</BoxTitle>
+          <BoxDescription>Sites fáceis de manutenção</BoxDescription>
+          <BoxParagraph>
+            Toda as vantagens de um website com a capacidade de atualizações
+            feita por você
+          </BoxParagraph>
+        </BoxDiv>
+
+        <BoxDiv>
+          <img
+            src="/assets/img/EcommerceIcon.svg"
+            style={{ margin: "-115px 0 0 0" }}
+          />
+          <BoxTitle>Ecommerce</BoxTitle>
+          <BoxDescription>Aumente sua venda no digital</BoxDescription>
+          <BoxParagraph>
+            Mostre e venda seus produtos através de uma plataforma 100% sua
+          </BoxParagraph>
+        </BoxDiv>
+
+        <BoxDiv>
+          <img
+            src="/assets/img/BusinessIcon.svg"
+            style={{ margin: "-90px 0 0 0" }}
+          />
+          <BoxTitle>Meu negócio</BoxTitle>
+          <BoxDescription>Sua empresa cadastrada no google</BoxDescription>
+          <BoxParagraph>
+            Registre sua empresa no google e permita que seus clientes te
+            encontre mais facilmente!
           </BoxParagraph>
         </BoxDiv>
 

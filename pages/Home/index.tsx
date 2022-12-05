@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "../../components/Nav";
 import NavResp from "../../components/NavResp";
-import Analytics from "./Analytics";
 import Banner from "./Banner";
 import Form from "./Form";
+import Portifolio from "./Portifolio";
 import Servicos from "./Servicos";
 
 import { Div, GreenCard, Mate, Title, WhiteCard } from "./styles";
@@ -19,9 +19,9 @@ const Home: React.FC = () => {
       </GreenCard>
       <Servicos />
       <GreenCard>
-        <Title>Aumente seu alcance</Title>
+        <Title>Portfólio</Title>
       </GreenCard>
-      <Analytics />
+      <Portifolio />
       <WhiteCard>
         <Title>Faça já seu orçamento gratuito!</Title>
       </WhiteCard>

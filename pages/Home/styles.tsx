@@ -1,3 +1,4 @@
+import { execArgv } from "process";
 import styled from "styled-components";
 
 export const Mate = styled.div`
@@ -196,47 +197,43 @@ export const KMParagraph = styled.p`
   color: #ffffff;
 `;
 
-export const AnalyticsDiv = styled.div`
-  padding: 100px 0;
+export const PortifolioDiv = styled.div`
+  padding: 150px 0;
   background-color: #1d1d1d;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-`;
-
-export const ADiv = styled.div`
-  max-width: 948px;
-  gap: 15px 0;
-  /* isso não funcionou */
-`;
-export const AFlexDiv = styled.div`
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 630px) {
+  gap: 115px 20px;
+  /* @media (min-width: 730px) {
     flex-wrap: nowrap;
-  }
+  } */
 `;
 
-export const AParagraph = styled.p`
-  font-family: "Roboto", monospace;
+export const PictureDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PictureTitle = styled.h1`
+  font-family: "Roboto Mono";
   font-style: normal;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 52px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
   color: #ffffff;
-  margin: auto;
-  max-width: 80vw;
-  text-align: center;
-  @media (min-width: 630px) {
-    text-align: left;
-  }
 `;
 
-export const ASpan = styled.span`
-  font-weight: 700;
+export const PictureParagraph = styled.p`
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 `;
 
 export const FormDiv = styled.div`
@@ -252,6 +249,8 @@ export const FormDiv = styled.div`
 
 export const ContactDiv = styled.div`
   color: #fff;
+  max-width: 80vw;
+  align-self: flex-start;
 `;
 
 export const EmailDiv = styled.div`
@@ -281,6 +280,22 @@ export const Input = styled.input`
   line-height: 21px;
 `;
 
+export const Submit = styled.button`
+  width: 150px;
+  height: 38px;
+  background: #11ff8d;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1d1d1d;
+  outline: none;
+  border: none;
+  /* align-self: flex-end; */
+`;
+
 export const Message = styled.textarea`
   max-width: 90vw;
   width: 516px;
@@ -298,11 +313,14 @@ export const Message = styled.textarea`
   line-height: 21px;
 `;
 
-export const WhatsDiv = styled.div`
+export const SocialDiv = styled.div`
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export const ContactsParagraph = styled.p`
+  text-align: center;
   padding: 0 20px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -310,10 +328,4 @@ export const ContactsParagraph = styled.p`
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-`;
-
-export const GitDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;

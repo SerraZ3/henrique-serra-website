@@ -5,9 +5,9 @@ import {
   FormDiv,
   Input,
   Message,
-  WhatsDiv,
   ContactsParagraph,
-  GitDiv,
+  SocialDiv,
+  Submit,
 } from "./styles";
 
 // import { Container } from './styles';
@@ -16,22 +16,44 @@ const Form: React.FC = () => {
   return (
     <FormDiv>
       <ContactDiv>
-        <WhatsDiv>
-          <img src="/assets/img/whatsapp.svg" />
-          <ContactsParagraph>08373743847049</ContactsParagraph>
-        </WhatsDiv>
-        <GitDiv>
+        {/* consertar resoponsivo desa parte  */}
+        <SocialDiv>
           <img
-            src="/assets/img/Github.png"
+            src="/assets/img/EmailIcon.svg"
             style={{ width: "30px", height: "30px" }}
           />
-          <ContactsParagraph>08373743847049</ContactsParagraph>
-        </GitDiv>
+          <ContactsParagraph>serra.henrique3@gmail.com</ContactsParagraph>
+        </SocialDiv>
+
+        <SocialDiv>
+          <img
+            src="/assets/img/LinkedinIcon.svg"
+            style={{ width: "30px", height: "30px" }}
+          />
+          <ContactsParagraph>linkedin.com/in/serra-henrique/</ContactsParagraph>
+        </SocialDiv>
+
+        <SocialDiv>
+          <img
+            src="/assets/img/WhatsappIcon.svg"
+            style={{ width: "30px", height: "30px" }}
+          />
+          <ContactsParagraph>(73) 9982-0671</ContactsParagraph>
+        </SocialDiv>
+
+        <SocialDiv>
+          <img
+            src="/assets/img/GithubIcon.png"
+            style={{ width: "30px", height: "30px" }}
+          />
+          <ContactsParagraph>github.com/SerraZ3</ContactsParagraph>
+        </SocialDiv>
       </ContactDiv>
       <EmailDiv>
-        <Input type={"text"} placeholder={"Nome"}></Input>
-        <Input type={"email"} placeholder={"E-mail"}></Input>
-        <Message placeholder={"Mensagem"}></Message>
+        <Input type={"text"} placeholder={"Nome"} />
+        <Input type={"email"} placeholder={"E-mail"} />
+        <Message placeholder={"Mensagem"} />
+        <Submit type={"submit"}>Enviar</Submit>
       </EmailDiv>
     </FormDiv>
   );
