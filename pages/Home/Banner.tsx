@@ -14,11 +14,13 @@ import {
   Square3,
 } from "./styles";
 
-// import { Container } from './styles';
+interface Banner {
+  id: string;
+}
 
-const Banner: React.FC = () => {
+const Banner: React.FC<Banner> = ({ id }) => {
   return (
-    <Div>
+    <Div id={id}>
       <BannerDiv>
         <PhraseDiv>
           <Phrase>

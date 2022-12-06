@@ -1,37 +1,42 @@
 import React from "react";
 import {
+  Img,
+  Pi,
   PictureDiv,
   PictureParagraph,
   PictureTitle,
   PortifolioDiv,
 } from "./styles";
 
-// import { Container } from './styles';
+interface Portifolio {
+  id: string;
+}
 
-const Portifolio: React.FC = () => {
+const Portifolio: React.FC<Portifolio> = ({ id }) => {
   return (
-    <PortifolioDiv>
+    <PortifolioDiv id={id}>
       <PictureDiv>
         <PictureTitle>NEX</PictureTitle>
-        <img src="/assets/img/NexImg.png" />
+        <Img src="/assets/img/NexImg.png" style={{ maxWidth: "80vw" }} />
+        <Pi className="pimagemteste">teste</Pi>
         <PictureParagraph>Exchange descentralizada</PictureParagraph>
       </PictureDiv>
 
       <PictureDiv>
         <PictureTitle>Expo cryto summit</PictureTitle>
-        <img src="/assets/img/.png" />
+        <Img src="/assets/img/ECSImg.png" style={{ maxWidth: "80vw" }} />
         <PictureParagraph>Plataforma NFT</PictureParagraph>
       </PictureDiv>
 
       <PictureDiv>
         <PictureTitle>Cacau Digital</PictureTitle>
-        <img src="/assets/img/.png" />
+        <Img src="/assets/img/CacauImg.png" style={{ maxWidth: "80vw" }} />
         <PictureParagraph>Plataforma de moeda digital</PictureParagraph>
       </PictureDiv>
 
       <PictureDiv>
         <PictureTitle>Comunidade Crazby</PictureTitle>
-        <img src="/assets/img/.png" />
+        <Img src="/assets/img/CrazbyImg.png" style={{ maxWidth: "80vw" }} />
         <PictureParagraph>Chatbot para comunidade</PictureParagraph>
       </PictureDiv>
     </PortifolioDiv>

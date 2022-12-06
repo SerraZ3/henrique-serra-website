@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ContactDiv,
   EmailDiv,
@@ -8,13 +9,16 @@ import {
   ContactsParagraph,
   SocialDiv,
   Submit,
+  A,
 } from "./styles";
 
-// import { Container } from './styles';
+interface Form {
+  id: string;
+}
 
-const Form: React.FC = () => {
+const Form: React.FC<Form> = ({ id }) => {
   return (
-    <FormDiv>
+    <FormDiv id={id}>
       <ContactDiv>
         {/* consertar resoponsivo desa parte  */}
         <SocialDiv>
@@ -22,6 +26,7 @@ const Form: React.FC = () => {
             src="/assets/img/EmailIcon.svg"
             style={{ width: "30px", height: "30px" }}
           />
+
           <ContactsParagraph>serra.henrique3@gmail.com</ContactsParagraph>
         </SocialDiv>
 

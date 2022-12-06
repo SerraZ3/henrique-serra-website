@@ -5,15 +5,30 @@ export const Mate = styled.div`
   padding: 300px 0;
 `;
 
+export const A = styled.a``;
+
+export const FullScreen = styled.div`
+  /* min-height: 446vh; */
+  min-height: 100vh;
+  background-color: red;
+  height: 100%;
+`;
+
+export const IndexDiv = styled.div`
+  background-color: #1d1d1d;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+`;
+
 export const Div = styled.div`
   background-color: #1d1d1d;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const BannerDiv = styled.div`
   color: #fff;
-  padding: 150px 0;
+  padding: 75px 0;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -41,7 +56,7 @@ export const Phrase = styled.h3`
   color: #ffffff;
   font-size: 36px;
   line-height: 51px;
-  text-align: justify;
+
   @media (min-width: 600px) {
     font-size: 100px;
     line-height: 79px;
@@ -59,10 +74,13 @@ export const Span = styled.span`
 `;
 
 export const WayDiv = styled.div`
-  max-width: 150px;
+  max-width: 156px;
   color: #ffffff;
-  margin-top: -140px;
   transform: rotate(270deg);
+  display: none;
+  @media (min-width: 730px) {
+    display: block;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -76,29 +94,42 @@ export const Paragraph = styled.p`
 
 export const SquareContainer = styled.div`
   /* ajeitar */
-  margin-top: -210px;
   margin-left: 30px;
-  @media (min-width: 600px) {
+  display: none;
+  @media (min-width: 730px) {
+    display: block;
     margin-left: 50%;
   }
 `;
 export const Square1 = styled.div`
   margin-top: -210px;
   border: 1px solid #11ff8d;
-  height: 194px;
-  width: 194px;
+  height: 160px;
+  width: 160px;
+  @media (min-width: 800px) {
+    height: 194px;
+    width: 194px;
+  }
 `;
 export const Square2 = styled.div`
-  margin-top: -210px;
+  margin-top: -162px;
   border: 1px solid #11ff8d;
-  height: 194px;
-  width: 194px;
+  height: 160px;
+  width: 160px;
+  @media (min-width: 800px) {
+    height: 194px;
+    width: 194px;
+  }
 `;
 export const Square3 = styled.div`
-  margin-top: -210px;
+  margin-top: -154px;
   border: 1px solid #11ff8d;
-  height: 194px;
-  width: 194px;
+  height: 160px;
+  width: 160px;
+  @media (min-width: 800px) {
+    height: 194px;
+    width: 194px;
+  }
 `;
 
 export const GreenCard = styled.div`
@@ -127,11 +158,15 @@ export const Title = styled.h1`
 
 export const WhiteCard = styled.div`
   /* margin-top: -230px; */
-  height: 185px;
+  height: 220px;
+
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 730px) {
+    height: 185px;
+  }
 `;
 
 export const ServicosDiv = styled.div`
@@ -188,6 +223,69 @@ export const BoxParagraph = styled.p`
   color: #ffffff;
 `;
 
+// export const FaceDiv = styled.div``;
+
+// export const FrenteDiv = styled.div`
+//   max-width: 80vw;
+//   width: 305px;
+//   height: auto;
+//   background: #2d2c2c;
+//   border-radius: 24px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 25px 30px;
+//   text-align: center;
+
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   padding: 10px;
+//   border-radius: 10px;
+//   transition: 700ms;
+
+//   background: limegreen;
+//   z-index: 1;
+
+//   &:hover {
+//     ${FaceDiv} {
+//       transform: rotateY(180deg);
+//       z-index: 0;
+//     }
+//   }
+// `;
+
+// export const FundoDiv = styled.div`
+//   max-width: 80vw;
+//   width: 305px;
+//   height: auto;
+//   background: #2d2c2c;
+//   border-radius: 24px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 25px 30px;
+//   text-align: center;
+
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   padding: 10px;
+//   border-radius: 10px;
+//   transition: 700ms;
+
+//   background: lightslategray;
+//   transform: rotateY(-180deg);
+//   backface-visibility: hidden;
+
+//   &:hover {
+//     ${FaceDiv} {
+//       transform: rotateY(0);
+//       z-index: 1;
+//     }
+//   }
+// `;
+
 export const KMParagraph = styled.p`
   font-family: "Roboto Mono", monospace;
   font-style: normal;
@@ -211,11 +309,20 @@ export const PortifolioDiv = styled.div`
   } */
 `;
 
+export const Pi = styled.p`
+  color: #fff;
+`;
+
 export const PictureDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &:hover {
+    ${Pi} {
+      color: red;
+    }
+  }
 `;
 
 export const PictureTitle = styled.h1`
@@ -227,6 +334,8 @@ export const PictureTitle = styled.h1`
   color: #ffffff;
 `;
 
+export const Img = styled.img``;
+
 export const PictureParagraph = styled.p`
   font-family: "Roboto Mono";
   font-style: normal;
@@ -234,6 +343,7 @@ export const PictureParagraph = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  text-align: center;
 `;
 
 export const FormDiv = styled.div`
@@ -325,7 +435,14 @@ export const ContactsParagraph = styled.p`
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 26px;
   color: #ffffff;
+  @media (min-width: 630px) {
+    font-size: 22px;
+  }
+  &:hover {
+    color: #11ff8d;
+    cursor: pointer;
+  }
 `;

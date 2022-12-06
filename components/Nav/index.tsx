@@ -1,18 +1,20 @@
 import React, { useState } from "react";
-import { Div, NavDiv, Logo, NavLink, LinkDiv } from "./styles";
+import { Div, NavDiv, Logo, NavLink, LinkDiv, LogoLink } from "./styles";
 
 const Nav: React.FC = () => {
   return (
     <NavDiv>
       <Div>
         {/* importar font Roboto*/}
-        <Logo>Henrique Serra</Logo>
+        <LogoLink href="#home">
+          <Logo>Henrique Serra</Logo>
+        </LogoLink>
       </Div>
       <LinkDiv>
-        <NavLink>Serviços</NavLink>
-        <NavLink>Sobre</NavLink>
-        <NavLink>Portifólio</NavLink>
-        <NavLink>Contato</NavLink>
+        <NavLink href="#services">Serviços</NavLink>
+        <NavLink href="#about">Sobre</NavLink>
+        <NavLink href="#portfolio">Portifólio</NavLink>
+        <NavLink href="#contact">Contato</NavLink>
       </LinkDiv>
     </NavDiv>
   );

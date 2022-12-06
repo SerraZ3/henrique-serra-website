@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export const Div = styled.div`
   display: flex;
@@ -9,7 +7,7 @@ export const Div = styled.div`
 
 export const LinkDiv = styled.div`
   display: none;
-  @media (min-width: 630px) {
+  @media (min-width: 700px) {
     display: flex;
     justify-content: space-around;
     width: 50vw;
@@ -17,11 +15,13 @@ export const LinkDiv = styled.div`
 `;
 
 export const NavDiv = styled.div`
+  z-index: 1;
   position: fixed;
   width: 100%;
+  max-width: 1200px;
   top: 0;
   background-color: #1d1d1d;
-  @media (min-width: 630px) {
+  @media (min-width: 700px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,9 +30,11 @@ export const NavDiv = styled.div`
   }
 `;
 
+export const LogoLink = styled.a``;
+
 export const Logo = styled.p`
   display: none;
-  @media (min-width: 630px) {
+  @media (min-width: 700px) {
     display: block;
     font-family: "Roboto", sans-serif;
     font-style: normal;
