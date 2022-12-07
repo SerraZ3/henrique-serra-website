@@ -157,7 +157,7 @@ export const Title = styled.h1`
   text-align: center;
   margin: 0 auto;
   @media (min-width: 630px) {
-    font-size: 60px;
+    font-size: 45px;
     line-height: 79px;
   }
 `;
@@ -183,7 +183,8 @@ export const ServicesDiv = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 115px 20px;
+  gap: 127px 25px;
+  /* gap: 115px 20px; */
   /* @media (min-width: 730px) {
     flex-wrap: nowrap;
   } */
@@ -192,7 +193,8 @@ export const ServicesDiv = styled.div`
 export const BoxDiv = styled.div`
   max-width: 80vw;
   width: 305px;
-  height: auto;
+  /* height: auto; */
+  height: 412px;
   background: #2d2c2c;
   border-radius: 24px;
   display: flex;
@@ -200,6 +202,9 @@ export const BoxDiv = styled.div`
   align-items: center;
   padding: 25px 30px;
   text-align: center;
+  @media (min-width: 998px) {
+    height: 370px;
+  }
 `;
 
 export const BoxTitle = styled.h3`

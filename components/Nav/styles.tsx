@@ -46,7 +46,7 @@ export const Logo = styled.p`
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 34px;
     color: #11ff8d;
     min-width: 160px;
@@ -61,7 +61,7 @@ export const NavLink = styled.a`
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   &:hover {
     cursor: pointer;
