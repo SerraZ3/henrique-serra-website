@@ -3,15 +3,13 @@ import Nav from "../../components/Nav";
 import NavResp from "../../components/NavResp";
 import Banner from "./Banner";
 import Form from "./Form";
-import Portifolio from "./Portifolio";
-import Servicos from "./Servicos";
+import Portfolio from "./Portfolio";
+import Services from "./Services";
 
 import {
-  Div,
   FullScreen,
   GreenCard,
-  IndexDiv,
-  Mate,
+  LimitContainer,
   Title,
   WhiteCard,
 } from "./styles";
@@ -19,23 +17,22 @@ import {
 const Home: React.FC = () => {
   return (
     <FullScreen>
-      <IndexDiv>
-        <Nav />
-        <NavResp />
-        <Banner id={"home"} />
-        <GreenCard>
-          <Title>Modernize seu negócio</Title>
-        </GreenCard>
-        <Servicos id={"services"} />
-        <GreenCard>
-          <Title>Portfólio</Title>
-        </GreenCard>
-        <Portifolio id={"portfolio"} />
-        <WhiteCard>
-          <Title>Faça já seu orçamento gratuito!</Title>
-        </WhiteCard>
-        <Form id={"contact"} />
-      </IndexDiv>
+      <Nav />
+      <NavResp />
+
+      <Banner id={"home"} />
+      <GreenCard>
+        <Title>Modernize seu negócio</Title>
+      </GreenCard>
+      <Services id={"services"} />
+      <GreenCard>
+        <Title>Portfólio</Title>
+      </GreenCard>
+      <Portfolio id={"portfolio"} />
+      <WhiteCard>
+        <Title>Faça já seu orçamento gratuito!</Title>
+      </WhiteCard>
+      <Form id={"contact"} />
     </FullScreen>
   );
 };

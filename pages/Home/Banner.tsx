@@ -1,43 +1,48 @@
 import React from "react";
 import {
   BannerDiv,
-  Phrase,
-  Span,
-  PhraseDiv,
-  WayDiv,
+  Container,
   Div,
-  Mate,
   Paragraph,
-  SquareContainer,
+  Phrase,
+  PhraseDiv,
+  Span,
   Square1,
   Square2,
   Square3,
+  SquareContainer,
+  WayDiv,
+  LimitContainer,
 } from "./styles";
 
-interface Banner {
+interface IBanner {
   id: string;
 }
 
-const Banner: React.FC<Banner> = ({ id }) => {
+const Banner: React.FC<IBanner> = ({ id }) => {
   return (
-    <Div id={id}>
-      <BannerDiv>
-        <PhraseDiv>
-          <Phrase>
-            A <Span>melhor solução tecnológica</Span> para o seu negócio
-          </Phrase>
-        </PhraseDiv>
-      </BannerDiv>
-      <WayDiv>
-        <Paragraph>Role para baixo</Paragraph>
-      </WayDiv>
-      <SquareContainer>
-        <Square1 />
-        <Square2 />
-        <Square3 />
-      </SquareContainer>
-      {/* <Mate /> */}
-    </Div>
+    <Container bgc="#1d1d1d">
+      <LimitContainer>
+        <Div id={id}>
+          <BannerDiv>
+            <PhraseDiv>
+              <Phrase>
+                A <Span>melhor solução tecnológica</Span> para o seu negócio
+              </Phrase>
+            </PhraseDiv>
+          </BannerDiv>
+          <WayDiv>
+            <Paragraph>Role para baixo</Paragraph>
+          </WayDiv>
+          <SquareContainer>
+            <Square1 />
+            <Square2 />
+            <Square3 />
+          </SquareContainer>
+          {/* <Mate /> */}
+        </Div>
+      </LimitContainer>
+    </Container>
   );
 };
 export default Banner;

@@ -1,6 +1,17 @@
-import { execArgv } from "process";
-import styled from "styled-components";
-
+import styled, { css } from "styled-components";
+interface IContainer {
+  bgc?: string;
+}
+export const Container = styled.div<IContainer>(
+  (props) => css`
+    min-height: 100vh;
+    width: 100%;
+    ${props.bgc &&
+    css`
+      background-color: ${props.bgc};
+    `}
+  `
+);
 export const Mate = styled.div`
   padding: 300px 0;
 `;
@@ -8,22 +19,17 @@ export const Mate = styled.div`
 export const A = styled.a``;
 
 export const FullScreen = styled.div`
-  /* min-height: 446vh; */
   min-height: 100vh;
-  background-color: red;
-  height: 100%;
 `;
 
-export const IndexDiv = styled.div`
+export const LimitContainer = styled.div`
   background-color: #1d1d1d;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
-  height: 100vh;
 `;
 
 export const Div = styled.div`
   background-color: #1d1d1d;
-  height: 100%;
 `;
 
 export const BannerDiv = styled.div`
@@ -169,7 +175,7 @@ export const WhiteCard = styled.div`
   }
 `;
 
-export const ServicosDiv = styled.div`
+export const ServicesDiv = styled.div`
   padding: 150px 0;
   background-color: #1d1d1d;
   display: flex;
@@ -295,7 +301,7 @@ export const KMParagraph = styled.p`
   color: #ffffff;
 `;
 
-export const PortifolioDiv = styled.div`
+export const PortfolioDiv = styled.div`
   padding: 150px 0;
   background-color: #1d1d1d;
   display: flex;

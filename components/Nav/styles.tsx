@@ -13,20 +13,27 @@ export const LinkDiv = styled.div`
     width: 50vw;
   }
 `;
-
-export const NavDiv = styled.div`
-  z-index: 1;
-  position: fixed;
+export const LimiterDiv = styled.div`
+  max-width: 1280px;
   width: 100%;
-  max-width: 1200px;
-  top: 0;
-  background-color: #1d1d1d;
   @media (min-width: 700px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: -12px 0;
-    border-bottom: 1px solid #fff;
+  }
+`;
+export const NavDiv = styled.nav`
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ffffffdd;
+  height: 56px;
+  @media (min-width: 992px) {
+    height: 64px;
   }
 `;
 
