@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   ContactDiv,
@@ -42,9 +43,14 @@ const Form: React.FC<IForm> = ({ id }) => {
                 height={30}
                 alt="Linkedin icon"
               />
-              <ContactsParagraph>
-                linkedin.com/in/serra-henrique/
-              </ContactsParagraph>
+              <Link
+                href={"https://www.linkedin.com/in/serra-henrique/"}
+                target={"_blank"}
+              >
+                <ContactsParagraph>
+                  linkedin.com/in/serra-henrique/
+                </ContactsParagraph>
+              </Link>
             </SocialDiv>
 
             <SocialDiv>
@@ -54,7 +60,14 @@ const Form: React.FC<IForm> = ({ id }) => {
                 height={30}
                 alt="Whatsapp icon"
               />
-              <ContactsParagraph>(73) 9982-0671</ContactsParagraph>
+              <Link
+                href={
+                  "https://api.whatsapp.com/send?phone=5573991420671&text=Quero%20fazer%20um%20or%C3%A7amento!"
+                }
+                target={"_blank"}
+              >
+                <ContactsParagraph>(73) 99142-0671</ContactsParagraph>
+              </Link>
             </SocialDiv>
 
             <SocialDiv>
@@ -64,15 +77,17 @@ const Form: React.FC<IForm> = ({ id }) => {
                 height={30}
                 alt="Github icon"
               />
-              <ContactsParagraph>github.com/SerraZ3</ContactsParagraph>
+              <Link href={"https://github.com/SerraZ3"} target={"_blank"}>
+                <ContactsParagraph>github.com/SerraZ3</ContactsParagraph>
+              </Link>
             </SocialDiv>
           </ContactDiv>
-          <EmailDiv>
+          {/* <EmailDiv>
             <Input type={"text"} placeholder={"Nome"} />
             <Input type={"email"} placeholder={"E-mail"} />
             <Message placeholder={"Mensagem"} />
             <Submit type={"submit"}>Enviar</Submit>
-          </EmailDiv>
+          </EmailDiv> */}
         </FormDiv>
       </LimitContainer>
     </Container>

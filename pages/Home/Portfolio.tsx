@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   Container,
@@ -20,25 +21,39 @@ const Portfolio: React.FC<IPortfolio> = ({ id }) => {
         <PortfolioDiv id={id}>
           <PictureDiv>
             <PictureTitle>NEX</PictureTitle>
-            <Img src="/assets/img/NexImg.png" style={{ maxWidth: "80vw" }} />
+            <Link href="https://nex.on.fleek.co/" target={"_blank"}>
+              <Img src="/assets/img/NexImg.png" style={{ maxWidth: "80vw" }} />
+            </Link>
             <PictureParagraph>Exchange descentralizada</PictureParagraph>
           </PictureDiv>
 
           <PictureDiv>
             <PictureTitle>Expo crypto summit</PictureTitle>
-            <Img src="/assets/img/ECSImg.png" style={{ maxWidth: "80vw" }} />
+            <Link href="https://expo.on.fleek.co/" target={"_blank"}>
+              <Img src="/assets/img/ECSImg.png" style={{ maxWidth: "80vw" }} />
+            </Link>
             <PictureParagraph>Plataforma NFT</PictureParagraph>
           </PictureDiv>
 
           <PictureDiv>
             <PictureTitle>Cacau Digital</PictureTitle>
-            <Img src="/assets/img/CacauImg.png" style={{ maxWidth: "80vw" }} />
+            <Link href="https://cacaudigital.io/" target={"_blank"}>
+              <Img
+                src="/assets/img/CacauImg.png"
+                style={{ maxWidth: "80vw" }}
+              />
+            </Link>
             <PictureParagraph>Plataforma de moeda digital</PictureParagraph>
           </PictureDiv>
 
           <PictureDiv>
             <PictureTitle>Comunidade Crazby</PictureTitle>
-            <Img src="/assets/img/CrazbyImg.png" style={{ maxWidth: "80vw" }} />
+            <Link href="https://telegram.me/Crazby_Bot" target={"_blank"}>
+              <Img
+                src="/assets/img/CrazbyImg.png"
+                style={{ maxWidth: "80vw" }}
+              />
+            </Link>
             <PictureParagraph>Chatbot para comunidade</PictureParagraph>
           </PictureDiv>
         </PortfolioDiv>

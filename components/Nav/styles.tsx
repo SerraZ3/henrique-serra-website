@@ -10,7 +10,7 @@ export const LinkDiv = styled.div`
   @media (min-width: 700px) {
     display: flex;
     justify-content: space-around;
-    width: 50vw;
+    width: 406px;
   }
 `;
 export const LimiterDiv = styled.div`
