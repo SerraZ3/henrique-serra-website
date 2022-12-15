@@ -11,15 +11,11 @@ import {
   ServicesDiv,
 } from "./styles";
 
-interface IServices {
-  id: string;
-}
-
-const Services: React.FC<IServices> = ({ id }) => {
+const Services: React.FC = () => {
   return (
     <Container bgc="#1d1d1d">
       <LimitContainer>
-        <ServicesDiv id={id}>
+        <ServicesDiv>
           <BoxDiv>
             {/* <Image src="/assets/img/Computer.svg" height="200px" width="200px" /> */}
             <img

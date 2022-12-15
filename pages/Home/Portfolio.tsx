@@ -10,15 +10,11 @@ import {
   PortfolioDiv,
 } from "./styles";
 
-interface IPortfolio {
-  id: string;
-}
-
-const Portfolio: React.FC<IPortfolio> = ({ id }) => {
+const Portfolio: React.FC = () => {
   return (
     <Container bgc="#1d1d1d">
       <LimitContainer>
-        <PortfolioDiv id={id}>
+        <PortfolioDiv>
           <PictureDiv>
             <PictureTitle>NEX</PictureTitle>
             <Link href="https://nex.on.fleek.co/" target={"_blank"}>

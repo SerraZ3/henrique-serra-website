@@ -6,13 +6,7 @@ import Form from "./Form";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 
-import {
-  FullScreen,
-  GreenCard,
-  LimitContainer,
-  Title,
-  WhiteCard,
-} from "./styles";
+import { FullScreen, GreenCard, Title, WhiteCard } from "./styles";
 
 const Home: React.FC = () => {
   return (
@@ -21,37 +15,19 @@ const Home: React.FC = () => {
       <NavResp />
 
       <Banner id={"home"} />
-      <GreenCard>
+      <GreenCard id={"services"}>
         <Title>Modernize seu negócio</Title>
       </GreenCard>
-      <Services id={"services"} />
-      <GreenCard>
+      <Services />
+
+      <GreenCard id={"portfolio"}>
         <Title>Portfólio</Title>
       </GreenCard>
-      <Portfolio id={"portfolio"} />
-      <WhiteCard>
+      <Portfolio />
+      <WhiteCard id={"contact"}>
         <Title>Faça já seu orçamento gratuito!</Title>
       </WhiteCard>
-      <Form id={"contact"} />
-
-      {/* <IndexDiv>
-        <Nav />
-        <NavResp />
-        <Banner id={"home"} />
-        <GreenCard>
-          <Title>Modernize seu negócio</Title>
-        </GreenCard>
-        <Servicos id={"services"} />
-        <GreenCard>
-          <Title>Portfólio</Title>
-        </GreenCard>
-        <Portifolio id={"portfolio"} />
-        <WhiteCard>
-          <Title>Faça já seu orçamento!</Title>
-        </WhiteCard>
-        <Form id={"contact"} />
-      </IndexDiv>
-      >>>>>>> f257c53 (box servicos padronizados) */}
+      <Form />
     </FullScreen>
   );
 };

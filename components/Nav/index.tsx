@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
         <LinkDiv>
           <NavLink href="#services">Serviços</NavLink>
           <NavLink href="#about">Sobre</NavLink>
-          <NavLink href="#portfolio">Portifólio</NavLink>
+          <NavLink href="#portfolio">Portfólio</NavLink>
           <NavLink href="#contact">Contato</NavLink>
         </LinkDiv>
       </LimiterDiv>

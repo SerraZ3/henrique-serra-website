@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #1d1d1d;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -11,4 +13,7 @@ a {
 
 * {
   box-sizing: border-box;
+}
+:target {
+  scroll-margin-top: 50px;
 }

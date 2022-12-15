@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { IndexDiv } from "../../pages/Home/styles";
 
 //css
 import {
   Div,
   Icon,
   Logo,
+  LogoLink,
   NavDiv,
   NavLink,
   ScreenDiv,
   ScreenNav,
-  LogoLink,
 } from "./styles";
 
 const NavResp: React.FC = () => {
@@ -44,7 +43,7 @@ const NavResp: React.FC = () => {
             Sobre
           </NavLink>
           <NavLink display={navOptions} href="#portfolio">
-            Portifólio
+            Portfólio
           </NavLink>
           <NavLink display={navOptions} href="#contact">
             Contato

@@ -5,24 +5,16 @@ import {
   ContactDiv,
   ContactsParagraph,
   Container,
-  EmailDiv,
   FormDiv,
-  Input,
   LimitContainer,
-  Message,
   SocialDiv,
-  Submit,
 } from "./styles";
 
-interface IForm {
-  id: string;
-}
-
-const Form: React.FC<IForm> = ({ id }) => {
+const Form: React.FC = () => {
   return (
     <Container bgc="#1d1d1d">
       <LimitContainer>
-        <FormDiv id={id}>
+        <FormDiv>
           <ContactDiv>
             {/* consertar resoponsivo desa parte  */}
             <SocialDiv>
