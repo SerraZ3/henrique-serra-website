@@ -52,6 +52,16 @@ const Portfolio: React.FC = () => {
             </Link>
             <PictureParagraph>Chatbot para comunidade</PictureParagraph>
           </PictureDiv>
+          <PictureDiv>
+            <PictureTitle>Henrique Serra</PictureTitle>
+            <Link href="https://henriqueserra.com.br" target={"_blank"}>
+              <Img
+                src="/assets/img/HenriqueSerra.png"
+                style={{ maxWidth: "80vw" }}
+              />
+            </Link>
+            <PictureParagraph>Site para portfólio</PictureParagraph>
+          </PictureDiv>
         </PortfolioDiv>
       </LimitContainer>
     </Container>

@@ -4,9 +4,9 @@ import React from "react";
 import {
   BoxDescription,
   BoxDiv,
-  BoxParagraph,
   BoxTitle,
   Container,
+  ImageIcon,
   LimitContainer,
   ServicesDiv,
 } from "./styles";
@@ -17,98 +17,67 @@ const Services: React.FC = () => {
       <LimitContainer>
         <ServicesDiv>
           <BoxDiv>
-            {/* <Image src="/assets/img/Computer.svg" height="200px" width="200px" /> */}
-            <img
-              src="/assets/img/Computer.svg"
-              style={{ margin: "-90px 0 0 0" }}
-            />
+            {/* <ImageIcon src="/assets/img/Computer.svg" height="200px" width="200px" /> */}
+            <ImageIcon src="/assets/img/Computer.svg" alt="Computer" />
 
             <BoxTitle>Website</BoxTitle>
             <BoxDescription>Mostre o seu negócio! </BoxDescription>
-            <BoxParagraph>
+            {/* <BoxParagraph>
               Design claro, mecanismos de buscas otimizados e conversão de
               usuários para clientes
-            </BoxParagraph>
+            </BoxParagraph> */}
           </BoxDiv>
 
           <BoxDiv>
-            <img
-              src="/assets/img/Mobile.svg"
-              style={{ margin: "-115px 0 0 0" }}
-            />
+            <ImageIcon src="/assets/img/Mobile.svg" alt="Cellphone" />
             <BoxTitle>Aplicativo</BoxTitle>
             <BoxDescription>Tudo na palma das mãos!</BoxDescription>
-            <BoxParagraph>
+            {/* <BoxParagraph>
               Realize atividades rotineiras em seu celular de forma rápida e
               fácil com um app híbrido (Android e IOS)
-            </BoxParagraph>
+            </BoxParagraph> */}
           </BoxDiv>
 
           <BoxDiv>
-            <img
-              src="/assets/img/WordpressIcon.svg"
-              style={{ margin: "-90px 0 0 0" }}
-            />
+            <ImageIcon src="/assets/img/WordpressIcon.svg" alt="Wordpress" />
             <BoxTitle>Wordpress</BoxTitle>
             <BoxDescription>Sites fáceis de manutenção</BoxDescription>
-            <BoxParagraph>
+            {/* <BoxParagraph>
               Toda as vantagens de um website com a capacidade de atualizações
               feita por você
-            </BoxParagraph>
+            </BoxParagraph> */}
           </BoxDiv>
 
           <BoxDiv>
-            <img
-              src="/assets/img/EcommerceIcon.svg"
-              style={{ margin: "-115px 0 0 0" }}
-            />
+            <ImageIcon src="/assets/img/EcommerceIcon.svg" alt="Ecommerce" />
             <BoxTitle>Ecommerce</BoxTitle>
             <BoxDescription>Aumente sua venda no digital</BoxDescription>
-            <BoxParagraph>
-              Mostre e venda seus produtos através de uma plataforma 100% sua
-            </BoxParagraph>
+            {/* <BoxParagraph>
+              Mostre e venda seus produtos através de uma
+            </BoxParagraph> */}
           </BoxDiv>
 
           <BoxDiv>
-            <img
+            <ImageIcon
               src="/assets/img/BusinessIcon.svg"
-              style={{ margin: "-90px 0 0 0" }}
+              alt="Google meu negócio"
             />
             <BoxTitle>Meu negócio</BoxTitle>
             <BoxDescription>Sua empresa cadastrada no google</BoxDescription>
-            <BoxParagraph>
+            {/* <BoxParagraph>
               Registre sua empresa no google e permita que seus clientes te
               encontre mais facilmente!
-            </BoxParagraph>
+            </BoxParagraph> */}
           </BoxDiv>
 
           <BoxDiv>
-            <img src="/assets/img/Bot.svg" style={{ margin: "-90px 0 0 0" }} />
+            <ImageIcon src="/assets/img/Bot.svg" alt="Bot" />
             <BoxTitle>ChatBot</BoxTitle>
             <BoxDescription>Automatize seus atendimentos!</BoxDescription>
-            <BoxParagraph>
+            {/* <BoxParagraph>
               Melhore a comunicação e experiência de seus clientes
-            </BoxParagraph>
+            </BoxParagraph> */}
           </BoxDiv>
-
-          {/* <FaceDiv>
-        <FrenteDiv>
-        <img src="/assets/img/Bot.svg" style={{ margin: "-90px 0 0 0" }} />
-        <BoxTitle>Frente</BoxTitle>
-        <BoxDescription>Automatize seus atendimentos!</BoxDescription>
-        <BoxParagraph>
-        Melhore a comunicação e experiência de seus clientes
-        </BoxParagraph>
-        </FrenteDiv>
-        <FundoDiv>
-        <img src="/assets/img/Bot.svg" style={{ margin: "-90px 0 0 0" }} />
-        <BoxTitle>Fundo</BoxTitle>
-        <BoxDescription>Automatize seus atendimentos!</BoxDescription>
-        <BoxParagraph>
-        Melhore a comunicação e experiência de seus clientes
-        </BoxParagraph>
-        </FundoDiv>
-      </FaceDiv> */}
         </ServicesDiv>
       </LimitContainer>
     </Container>

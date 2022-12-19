@@ -10,9 +10,9 @@ import {
   SocialDiv,
 } from "./styles";
 
-const Form: React.FC = () => {
+const Footer: React.FC = () => {
   return (
-    <Container bgc="#1d1d1d">
+    <Container bgc="#1d1d1d" withoutHeight>
       <LimitContainer>
         <FormDiv>
           <ContactDiv>
@@ -86,4 +86,4 @@ const Form: React.FC = () => {
   );
 };
 
-export default Form;
+export default Footer;

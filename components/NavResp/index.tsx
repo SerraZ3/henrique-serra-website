@@ -39,9 +39,9 @@ const NavResp: React.FC = () => {
           <NavLink display={navOptions} href="#services">
             Serviços
           </NavLink>
-          <NavLink display={navOptions} href="#about">
+          {/* <NavLink display={navOptions} href="#about">
             Sobre
-          </NavLink>
+          </NavLink> */}
           <NavLink display={navOptions} href="#portfolio">
             Portfólio
           </NavLink>

@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
         </Div>
         <LinkDiv>
           <NavLink href="#services">Serviços</NavLink>
-          <NavLink href="#about">Sobre</NavLink>
+          {/* <NavLink href="#about">Sobre</NavLink> */}
           <NavLink href="#portfolio">Portfólio</NavLink>
           <NavLink href="#contact">Contato</NavLink>
         </LinkDiv>

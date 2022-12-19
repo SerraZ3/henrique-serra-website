@@ -1,12 +1,18 @@
 import React from "react";
 import Nav from "../../components/Nav";
 import NavResp from "../../components/NavResp";
-import Banner from "./Banner";
-import Form from "./Form";
-import Portfolio from "./Portfolio";
-import Services from "./Services";
+import Banner from "../../components/pages/home/Banner";
+import Footer from "../../components/pages/home/Footer";
+import FooterBar from "../../components/pages/home/FooterBar";
+import Portfolio from "../../components/pages/home/Portfolio";
+import Services from "../../components/pages/home/Services";
 
-import { FullScreen, GreenCard, Title, WhiteCard } from "./styles";
+import {
+  FullScreen,
+  GreenCard,
+  Title,
+  WhiteCard,
+} from "../../components/pages/home/styles";
 
 const Home: React.FC = () => {
   return (
@@ -27,7 +33,8 @@ const Home: React.FC = () => {
       <WhiteCard id={"contact"}>
         <Title>Faça já seu orçamento gratuito!</Title>
       </WhiteCard>
-      <Form />
+      <Footer />
+      <FooterBar />
     </FullScreen>
   );
 };

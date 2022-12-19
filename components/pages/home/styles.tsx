@@ -1,10 +1,16 @@
-import styled, { css } from "styled-components";
+import Image from "next/image";
+import styled, { css, keyframes } from "styled-components";
 interface IContainer {
   bgc?: string;
+  withoutHeight?: boolean;
 }
 export const Container = styled.div<IContainer>(
   (props) => css`
-    min-height: 100vh;
+    ${!props.withoutHeight &&
+    css`
+      min-height: 100vh;
+    `}
+
     width: 100%;
     ${props.bgc &&
     css`
@@ -28,15 +34,17 @@ export const LimitContainer = styled.div`
   margin: auto;
 `;
 
-export const Div = styled.div`
-  background-color: #1d1d1d;
+export const ContainerBanner = styled.div`
+  position: relative;
+  height: 100vh;
 `;
 
 export const BannerDiv = styled.div`
   color: #fff;
-  padding: 75px 0;
+  margin-top: 100px;
   display: flex;
   align-items: center;
+  padding: 0 30px;
   justify-content: start;
   /* max-width: 1000px; */
   @media (min-width: 500px) {
@@ -44,16 +52,9 @@ export const BannerDiv = styled.div`
   }
 `;
 export const PhraseDiv = styled.div`
-  /* display: flex;
-  align-items: center;
-  justify-content: start; */
-  max-width: 70vw;
   width: 100%;
   margin-left: 0;
   margin: auto;
-  @media (min-width: 500px) {
-    margin-left: 68px;
-  }
 `;
 export const Phrase = styled.h3`
   font-family: "Roboto Mono", monospace;
@@ -80,11 +81,12 @@ export const Span = styled.span`
 `;
 
 export const WayDiv = styled.div`
-  max-width: 156px;
   color: #ffffff;
   transform: rotate(270deg);
   display: none;
-  @media (min-width: 730px) {
+  position: absolute;
+  bottom: 300px;
+  @media (min-width: 400px) {
     display: block;
   }
 `;
@@ -95,43 +97,76 @@ export const Paragraph = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 26px;
+  margin: 0;
 `;
-
+const ArrowMove = keyframes`  
+  0%{
+    left: -40px;  
+  }
+  50%{
+    left: -50px;  
+  }
+  100% {
+    left: -40px;  
+  }
+`;
+export const ArrowDownIcon = styled(Image).attrs({
+  width: 25,
+  height: 25,
+})`
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: -20px;
+  animation-name: ${ArrowMove};
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+`;
+export const SquareContainerToRight = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 export const SquareContainer = styled.div`
-  /* ajeitar */
-  margin-left: 30px;
-  display: none;
+  /* display: none; */
+  position: relative;
+
+  width: 300px;
   @media (min-width: 730px) {
-    display: block;
-    margin-left: 50%;
+    /* display: block; */
   }
 `;
 export const Square1 = styled.div`
-  margin-top: -210px;
   border: 1px solid #11ff8d;
   height: 160px;
   width: 160px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
   @media (min-width: 800px) {
     height: 194px;
     width: 194px;
   }
 `;
 export const Square2 = styled.div`
-  margin-top: -162px;
   border: 1px solid #11ff8d;
   height: 160px;
   width: 160px;
+  position: absolute;
+  top: 0;
+  left: 70px;
   @media (min-width: 800px) {
     height: 194px;
     width: 194px;
   }
 `;
 export const Square3 = styled.div`
-  margin-top: -154px;
+  top: 0;
   border: 1px solid #11ff8d;
   height: 160px;
   width: 160px;
+  position: absolute;
+  top: 40px;
+  left: 30px;
   @media (min-width: 800px) {
     height: 194px;
     width: 194px;
@@ -189,21 +224,28 @@ export const ServicesDiv = styled.div`
     flex-wrap: nowrap;
   } */
 `;
-
+export const ImageIcon = styled(Image).attrs({
+  width: 120,
+  height: 120,
+})`
+  position: absolute;
+  top: -70px;
+`;
 export const BoxDiv = styled.div`
   max-width: 80vw;
   width: 305px;
   /* height: auto; */
-  height: 412px;
+  height: 250px;
   background: #2d2c2c;
+  position: relative;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 30px;
+  padding: 50px 15px 25px 15px;
   text-align: center;
   @media (min-width: 998px) {
-    height: 370px;
+    height: 250px;
   }
 `;
 
@@ -310,14 +352,14 @@ export const PortfolioDiv = styled.div`
   padding: 150px 0;
   background-color: #1d1d1d;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 115px 20px;
-  /* @media (min-width: 730px) {
-    flex-wrap: nowrap;
-  } */
+  @media (min-width: 1100px) {
+    justify-content: flex-start;
+    gap: 115px 0;
+  }
 `;
 
 export const Pi = styled.p`
@@ -333,6 +375,9 @@ export const PictureDiv = styled.div`
     ${Pi} {
       color: red;
     }
+  }
+  @media only screen and (min-width: 1100px) {
+    width: calc(1 / 3 * 100%);
   }
 `;
 
@@ -359,6 +404,7 @@ export const PictureParagraph = styled.p`
 
 export const FormDiv = styled.div`
   padding: 100px 0;
+  min-height: 70vh;
   background-color: #1d1d1d;
   display: flex;
   flex-direction: row;
@@ -443,6 +489,7 @@ export const SocialDiv = styled.div`
 export const ContactsParagraph = styled.p`
   text-align: center;
   padding: 0 20px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -456,4 +503,17 @@ export const ContactsParagraph = styled.p`
     color: #11ff8d;
     cursor: pointer;
   }
+`;
+export const FooterContainer = styled.div`
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const FooterText = styled.span`
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  color: #1d1d1d;
+  font-weight: 600;
 `;

@@ -18,7 +18,7 @@ export const LimiterDiv = styled.div`
   width: 100%;
   @media (min-width: 700px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 `;
@@ -37,10 +37,14 @@ export const NavDiv = styled.nav`
   }
 `;
 
-export const LogoLink = styled.a``;
+export const LogoLink = styled.a`
+  padding: 0 20px;
+`;
 
 export const Logo = styled.p`
   display: none;
+  margin: 0;
+  cursor: pointer;
   @media (min-width: 700px) {
     display: block;
     font-family: "Roboto", sans-serif;
@@ -51,9 +55,6 @@ export const Logo = styled.p`
     color: #11ff8d;
     min-width: 160px;
   }
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const NavLink = styled.a`
@@ -63,8 +64,8 @@ export const NavLink = styled.a`
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
   &:hover {
-    cursor: pointer;
     color: #11ff8d;
   }
 `;

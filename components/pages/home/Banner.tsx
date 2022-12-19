@@ -2,7 +2,7 @@ import React from "react";
 import {
   BannerDiv,
   Container,
-  Div,
+  ContainerBanner,
   Paragraph,
   Phrase,
   PhraseDiv,
@@ -13,6 +13,8 @@ import {
   SquareContainer,
   WayDiv,
   LimitContainer,
+  ArrowDownIcon,
+  SquareContainerToRight,
 } from "./styles";
 
 interface IBanner {
@@ -23,24 +25,28 @@ const Banner: React.FC<IBanner> = ({ id }) => {
   return (
     <Container bgc="#1d1d1d">
       <LimitContainer>
-        <Div id={id}>
+        <ContainerBanner id={id}>
           <BannerDiv>
             <PhraseDiv>
               <Phrase>
-                A <Span>melhor solução tecnológica</Span> para o seu negócio
+                A <Span>melhor solução tecnológica</Span>
+                <br /> para o seu negócio
               </Phrase>
             </PhraseDiv>
           </BannerDiv>
           <WayDiv>
             <Paragraph>Role para baixo</Paragraph>
+            <ArrowDownIcon src="/assets/img/Arrow.svg" alt="Arrow down" />
           </WayDiv>
-          <SquareContainer>
-            <Square1 />
-            <Square2 />
-            <Square3 />
-          </SquareContainer>
+          <SquareContainerToRight>
+            <SquareContainer>
+              <Square1 />
+              <Square2 />
+              <Square3 />
+            </SquareContainer>
+          </SquareContainerToRight>
           {/* <Mate /> */}
-        </Div>
+        </ContainerBanner>
       </LimitContainer>
     </Container>
   );
