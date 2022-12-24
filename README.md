@@ -1,3 +1,3 @@
 # Henrique serra website 
 
-Site landingpage
+Site landing page
