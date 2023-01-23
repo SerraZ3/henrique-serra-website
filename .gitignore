@@ -38,3 +38,6 @@ yarn.lock
 package-lock.json
 
 deploy.sh
+
+build/
+node_modules

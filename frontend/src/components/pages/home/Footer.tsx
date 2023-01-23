@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
               <a
                 href={"https://www.linkedin.com/in/serra-henrique/"}
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <ContactsParagraph>
                   linkedin.com/in/serra-henrique/
@@ -54,6 +55,7 @@ const Footer: React.FC = () => {
                   "https://api.whatsapp.com/send?phone=5573991420671&text=Quero%20fazer%20um%20or%C3%A7amento!"
                 }
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <ContactsParagraph>(73) 99142-0671</ContactsParagraph>
               </a>
@@ -61,7 +63,11 @@ const Footer: React.FC = () => {
 
             <SocialDiv>
               <img src={githubIcon} width={30} height={30} alt="Github icon" />
-              <a href={"https://github.com/SerraZ3"} target={"_blank"}>
+              <a
+                href={"https://github.com/SerraZ3"}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <ContactsParagraph>github.com/SerraZ3</ContactsParagraph>
               </a>
             </SocialDiv>
