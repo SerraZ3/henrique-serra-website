@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4af9627a.css",
+    "main.js": "/static/js/main.01b301b1.js",
+    "static/media/CacauImg.png": "/static/media/CacauImg.79feb065f7999e54e862.png",
+    "static/media/ECSImg.png": "/static/media/ECSImg.c2e0aa17787c27817d61.png",
+    "static/media/NexImg.png": "/static/media/NexImg.45987557983409fb4db4.png",
+    "static/media/CrazbyImg.png": "/static/media/CrazbyImg.aa6e61767998ff1ceb1d.png",
+    "static/media/logo.svg": "/static/media/logo.575d2bfea1d90e07024e92ed3ff7104f.svg",
+    "static/media/Bot.svg": "/static/media/Bot.1c6809576d1e6db30bd199476dfd5561.svg",
+    "static/media/Mobile.svg": "/static/media/Mobile.93a420ffc7b322b0939bb4c9fadba065.svg",
+    "static/media/EcommerceIcon.svg": "/static/media/EcommerceIcon.6695502f61a126719346e8a3deb023c8.svg",
+    "static/media/BusinessIcon.svg": "/static/media/BusinessIcon.8a954ce923c95a3e6c9bef5ab9e3704c.svg",
+    "static/media/WhatsappIcon.svg": "/static/media/WhatsappIcon.6b01ab19276f1c651da9060e10d38e70.svg",
+    "static/media/Computer.svg": "/static/media/Computer.6602e5f7952b4533435f86774f9165c8.svg",
+    "static/media/WordpressIcon.svg": "/static/media/WordpressIcon.c6a6dd81bf0c482f5440ce742aa20157.svg",
+    "index.html": "/index.html",
+    "static/media/Arrow.svg": "/static/media/Arrow.496e5907a16d7665a822d3ab8a9142dc.svg",
+    "static/media/LinkedinIcon.svg": "/static/media/LinkedinIcon.5a482201c5f3ff3caf498fcbaa229ce3.svg",
+    "static/media/EmailIcon.svg": "/static/media/EmailIcon.45632ae2569e640a2dd23b3113241a59.svg",
+    "main.4af9627a.css.map": "/static/css/main.4af9627a.css.map",
+    "main.01b301b1.js.map": "/static/js/main.01b301b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4af9627a.css",
+    "static/js/main.01b301b1.js"
+  ]
+}
