@@ -12,8 +12,11 @@ import emailIcon from "../../../assets/img/EmailIcon.svg";
 import linkedinIcon from "../../../assets/img/LinkedinIcon.svg";
 import whatsappIcon from "../../../assets/img/WhatsappIcon.svg";
 import githubIcon from "../../../assets/img/GithubIcon.png";
+import googleAnalytics from "../../../lib/googleAnalytics";
 
 const Footer: React.FC = () => {
+  const gaEventTracker = googleAnalytics.useAnalyticsEventTracker("Home");
+
   return (
     <Container bgc="#1d1d1d" withoutHeight>
       <LimitContainer>
@@ -21,8 +24,14 @@ const Footer: React.FC = () => {
           <ContactDiv>
             <SocialDiv>
               <img src={emailIcon} width={30} height={30} alt="Email icon" />
-
-              <ContactsParagraph>serra.henrique3@gmail.com</ContactsParagraph>
+              <a
+                href={"mailto:serra.henrique3@gmail.com"}
+                onClick={() => {
+                  gaEventTracker("Social", "email");
+                }}
+              >
+                <ContactsParagraph>serra.henrique3@gmail.com</ContactsParagraph>
+              </a>
             </SocialDiv>
 
             <SocialDiv>
@@ -35,6 +44,9 @@ const Footer: React.FC = () => {
               <a
                 href={"https://www.linkedin.com/in/serra-henrique/"}
                 target={"_blank"}
+                onClick={() => {
+                  gaEventTracker("Social", "linkedin");
+                }}
                 rel="noreferrer"
               >
                 <ContactsParagraph>
@@ -54,6 +66,9 @@ const Footer: React.FC = () => {
                 href={
                   "https://api.whatsapp.com/send?phone=5573991420671&text=Quero%20fazer%20um%20or%C3%A7amento!"
                 }
+                onClick={() => {
+                  gaEventTracker("Social", "whatsapp");
+                }}
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -67,6 +82,9 @@ const Footer: React.FC = () => {
                 href={"https://github.com/SerraZ3"}
                 target={"_blank"}
                 rel="noreferrer"
+                onClick={() => {
+                  gaEventTracker("Social", "github");
+                }}
               >
                 <ContactsParagraph>github.com/SerraZ3</ContactsParagraph>
               </a>
