@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.4af9627a.css",
-    "main.js": "/static/js/main.01b301b1.js",
+    "main.js": "/static/js/main.03fb4436.js",
     "static/media/CacauImg.png": "/static/media/CacauImg.79feb065f7999e54e862.png",
     "static/media/ECSImg.png": "/static/media/ECSImg.c2e0aa17787c27817d61.png",
+    "static/media/sorti-coworking.png": "/static/media/sorti-coworking.8c77d8e50774f080f23f.png",
     "static/media/NexImg.png": "/static/media/NexImg.45987557983409fb4db4.png",
     "static/media/CrazbyImg.png": "/static/media/CrazbyImg.aa6e61767998ff1ceb1d.png",
     "static/media/logo.svg": "/static/media/logo.575d2bfea1d90e07024e92ed3ff7104f.svg",
@@ -19,10 +20,10 @@
     "static/media/LinkedinIcon.svg": "/static/media/LinkedinIcon.5a482201c5f3ff3caf498fcbaa229ce3.svg",
     "static/media/EmailIcon.svg": "/static/media/EmailIcon.45632ae2569e640a2dd23b3113241a59.svg",
     "main.4af9627a.css.map": "/static/css/main.4af9627a.css.map",
-    "main.01b301b1.js.map": "/static/js/main.01b301b1.js.map"
+    "main.03fb4436.js.map": "/static/js/main.03fb4436.js.map"
   },
   "entrypoints": [
     "static/css/main.4af9627a.css",
-    "static/js/main.01b301b1.js"
+    "static/js/main.03fb4436.js"
   ]
 }
