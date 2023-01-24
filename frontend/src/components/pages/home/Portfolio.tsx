@@ -13,8 +13,11 @@ import expoImg from "../../../assets/img/ECSImg.png";
 import cacauDigitalImg from "../../../assets/img/CacauImg.png";
 import crazbyImg from "../../../assets/img/CrazbyImg.png";
 import henriqueSerraImg from "../../../assets/img/HenriqueSerra.png";
+import sortiCoworkingImg from "../../../assets/img/sorti-coworking.png";
+import googleAnalytics from "../../../lib/googleAnalytics";
 
 const Portfolio: React.FC = () => {
+  const gaEventTracker = googleAnalytics.useAnalyticsEventTracker("Home");
   return (
     <Container bgc="#1d1d1d">
       <LimitContainer>
@@ -25,6 +28,9 @@ const Portfolio: React.FC = () => {
               href="https://nex.on.fleek.co/"
               target={"_blank"}
               rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Nex");
+              }}
             >
               <Img
                 src={nexImg}
@@ -41,6 +47,9 @@ const Portfolio: React.FC = () => {
               href="https://expo.on.fleek.co/"
               target={"_blank"}
               rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Expo Crypto Summit");
+              }}
             >
               <Img
                 src={expoImg}
@@ -57,6 +66,9 @@ const Portfolio: React.FC = () => {
               href="https://cacaudigital.io/"
               target={"_blank"}
               rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Cacau Digital");
+              }}
             >
               <Img
                 src={cacauDigitalImg}
@@ -73,6 +85,9 @@ const Portfolio: React.FC = () => {
               href="https://telegram.me/Crazby_Bot"
               target={"_blank"}
               rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Chatbot Crazby");
+              }}
             >
               <Img
                 src={crazbyImg}
@@ -88,6 +103,9 @@ const Portfolio: React.FC = () => {
               href="https://henriqueserra.com.br"
               target={"_blank"}
               rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Henrique Serra");
+              }}
             >
               <Img
                 src={henriqueSerraImg}
@@ -95,7 +113,25 @@ const Portfolio: React.FC = () => {
                 alt="Website Henrique Serra"
               />
             </a>
-            <PictureParagraph>Site para portfólio</PictureParagraph>
+            <PictureParagraph>Site portfólio</PictureParagraph>
+          </PictureDiv>
+          <PictureDiv>
+            <PictureTitle>Sorti Coworking</PictureTitle>
+            <a
+              href="https://sorticoworking.com"
+              target={"_blank"}
+              rel="noreferrer"
+              onClick={() => {
+                gaEventTracker("Portfólio", "Sorti Coworking");
+              }}
+            >
+              <Img
+                src={sortiCoworkingImg}
+                style={{ maxWidth: "80vw" }}
+                alt="Website Sorti Coworking"
+              />
+            </a>
+            <PictureParagraph>Site portfólio</PictureParagraph>
           </PictureDiv>
         </PortfolioDiv>
       </LimitContainer>
